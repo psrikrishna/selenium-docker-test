@@ -27,8 +27,8 @@ services:
       - HUB_HOST=hub
       - BROWSER=firefox
       - MODULE=search-module.xml
-    volumes: 
-      - ./search-result:/usr/share/udemy/test-output
+    #volumes: 
+     # - ./search-result:/usr/share/udemy/test-output
   book-flight-module-with-chrome:
     image: srikp/selenium-docker
     depends_on: 
@@ -38,5 +38,5 @@ services:
       - HUB_HOST=hub
       - BROWSER=chrome
       - MODULE=book-flight-module.xml
-    volumes: 
-      - ./book-flight-result:/usr/share/udemy/test-output
+  #  volumes: 
+   #   - ./book-flight-result:/usr/share/udemy/test-output
